@@ -559,3 +559,26 @@ footer a:hover {
     display: block;
   }
 }
+
+/* === ÖZELLİKLER BÖLÜMÜ (BASİT GRID) === */
+.simple-features-grid {
+  display: grid;
+  /* Masaüstünde 4 sütunlu bir görünüm sağlar */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.simple-feature {
+  text-align: center;
+}
+
+.simple-feature h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.simple-feature p {
+  color: #666;
+  font-size: 0.95rem;
+}

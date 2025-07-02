@@ -52,29 +52,27 @@ const Home = () => {
 
                 {/* Özellikler bölümü JSON'dan beslenmediği için olduğu gibi kalabilir veya eklenebilir. */}
                 <section className="section">
+                    {/* JSON'dan gelen başlığı kullanıyoruz */}
                     <h2>{t('home.featuresSection.title')}</h2>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', padding: '2rem' }}>
 
-                        <div style={{ textAlign: 'center' }}>
+                    {/* Inline stili kaldırıp yerine className ekliyoruz */}
+                    <div className="simple-features-grid">
+                        <div className="simple-feature">
                             <h4>{t('home.featuresSection.feature1_title')}</h4>
                             <p>{t('home.featuresSection.feature1_desc')}</p>
                         </div>
-
-                        <div style={{ textAlign: 'center' }}>
+                        <div className="simple-feature">
                             <h4>{t('home.featuresSection.feature2_title')}</h4>
                             <p>{t('home.featuresSection.feature2_desc')}</p>
                         </div>
-
-                        <div style={{ textAlign: 'center' }}>
+                        <div className="simple-feature">
                             <h4>{t('home.featuresSection.feature3_title')}</h4>
                             <p>{t('home.featuresSection.feature3_desc')}</p>
                         </div>
-
-                        <div style={{ textAlign: 'center' }}>
+                        <div className="simple-feature">
                             <h4>{t('home.featuresSection.feature4_title')}</h4>
                             <p>{t('home.featuresSection.feature4_desc')}</p>
                         </div>
-
                     </div>
                 </section>
             </div>
