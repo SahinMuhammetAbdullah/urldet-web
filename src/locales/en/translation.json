@@ -42,6 +42,12 @@
       "errorInvalidURL": "Please enter a valid URL.",
       "errorURLFormat": "URL must start with http:// or https://."
     },
+    "riskLevels": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low",
+      "minimal": "Minimal"
+    },
     "result": {
       "status": "Status",
       "safe": "Safe",

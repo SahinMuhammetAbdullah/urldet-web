@@ -57,6 +57,12 @@
         "safetyWarningTitle": "Güvenlik Uyarısı",
         "safetyWarningText": "Bu URL'ye erişmemeniz önerilir! Kişisel bilgilerinizi paylaşmayın ve indirme işlemi yapmayın."
     },
+    "riskLevels": {
+        "high": "Yüksek",
+        "medium": "Orta",
+        "low": "Düşük",
+        "minimal": "Minimal"
+    },
     "about": {
         "navLink": "Proje Ekibi",
         "pageTitle": "Proje Ekibi ve Danışmanlar",
