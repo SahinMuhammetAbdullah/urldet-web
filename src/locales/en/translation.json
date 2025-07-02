@@ -57,6 +57,18 @@
       "safetyWarningTitle": "Security Alert",
       "safetyWarningText": "It is recommended not to access this URL! Do not share personal information or download any files."
     },
+    "about": {
+      "navLink": "About Team",
+      "pageTitle": "Project Team and Advisors",
+      "teamTitle": "Development Team",
+      "advisorsTitle": "Project Advisors",
+      "roles": {
+        "leadDeveloper": "Lead Developer",
+        "developer": "Developer",
+        "uiDesigner": "UI/UX Designer",
+        "advisor": "Project Advisor"
+      }
+    },
     "footer": {
       "copyright": "© {{year}} URLDet. All rights reserved.",
       "developer": "Developer:"

@@ -12,7 +12,7 @@ const Footer = () => {
           {t('footer.copyright', { year: currentYear })}
         </p>
         <p>
-          {t('footer.developer')} <a href="https://github.com/masahin" target="_blank" rel="noopener noreferrer">Muhammet Abdullah Şahin</a>
+          {t('footer.developer')} <a href="https://github.com/SahinMuhammetAbdullah" target="_blank" rel="noopener noreferrer">Muhammet Abdullah Şahin</a>
         </p>
       </div>
     </footer>

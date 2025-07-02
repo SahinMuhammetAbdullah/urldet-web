@@ -57,6 +57,18 @@
         "safetyWarningTitle": "Güvenlik Uyarısı",
         "safetyWarningText": "Bu URL'ye erişmemeniz önerilir! Kişisel bilgilerinizi paylaşmayın ve indirme işlemi yapmayın."
     },
+    "about": {
+        "navLink": "Proje Ekibi",
+        "pageTitle": "Proje Ekibi ve Danışmanlar",
+        "teamTitle": "Geliştirici Ekip",
+        "advisorsTitle": "Proje Danışmanları",
+        "roles": {
+        "leadDeveloper": "Lider Geliştirici",
+        "developer": "Geliştirici",
+        "uiDesigner": "UI/UX Tasarımcısı",
+        "advisor": "Proje Danışmanı"
+        }
+    },
     "footer": {
         "copyright": "© {{year}} URLDet. Tüm hakları saklıdır.",
         "developer": "Geliştirici:"
