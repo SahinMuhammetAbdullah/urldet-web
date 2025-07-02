@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<!-- 
-    Bu site haritası projenizdeki 3 ana sayfayı içerir.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+&#xA;            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Bu site haritası projenizdeki 3 ana sayfayı içerir.
     - Ana Sayfa (/)
     - URL Analiz Sayfası (/analysis)
-    - Proje Ekibi Sayfası (/about)
--->
-
-<url>
-  <loc>https://urldet.masahin.dev/</loc>
-  <lastmod>2024-07-03T12:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://urldet.masahin.dev/analysis</loc>
-  <lastmod>2024-07-03T12:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>https://urldet.masahin.dev/about</loc>
-  <lastmod>2024-07-03T12:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>yearly</changefreq>
-</url>
-
+    - Proje Ekibi Sayfası (/about) -->
+    <url>
+        <loc>https://urldet.masahin.dev/</loc>
+        <lastmod>2024-07-03T12:00:00+00:00</lastmod>
+        <priority>1.00</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://urldet.masahin.dev/analysis</loc>
+        <lastmod>2024-07-03T12:00:00+00:00</lastmod>
+        <priority>0.90</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://urldet.masahin.dev/about</loc>
+        <lastmod>2024-07-03T12:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+        <changefreq>yearly</changefreq>
+    </url>
 </urlset>
