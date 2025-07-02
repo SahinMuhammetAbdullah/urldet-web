@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# Tüm arama motoru botlarının, sitenin tamamını taramasına izin ver.
 User-agent: *
 Disallow:
+
+# Sitemap dosyasının yerini belirtmek, botların sitenizi daha verimli taramasına yardımcı olur.
+Sitemap: https://urldet.masahin.dev/sitemap.xml 

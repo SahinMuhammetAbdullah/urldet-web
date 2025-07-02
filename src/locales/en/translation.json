@@ -1,0 +1,64 @@
+{
+    "appName": "URLDet",
+    "header": {
+      "navHome": "Home",
+      "navAnalyze": "URL Analysis"
+    },
+    "home": {
+      "hero": {
+        "title": "URLDet",
+        "subtitle": "Advanced URL security analysis with machine learning",
+        "button": "Analyze Now"
+      },
+      "howItWorks": {
+        "title": "How It Works",
+        "description": "URLDet analyzes the security of URLs using state-of-the-art machine learning algorithms.",
+        "feature1_title": "Random Forest",
+        "feature1_desc": "Determines if URLs are safe or suspicious using the Random Forest algorithm for binary classification.",
+        "feature2_title": "Deep Q-Network",
+        "feature2_desc": "Detects detailed threat categories with a DQN model for multi-class classification.",
+        "feature3_title": "Real-Time Analysis",
+        "feature3_desc": "URLs are analyzed instantly, and results are returned within seconds."
+      },
+      "featuresSection": {
+        "title": "Features",
+        "feature1_title": "🔍 Comprehensive Analysis",
+        "feature1_desc": "URL structure, domain properties, and content analysis",
+        "feature2_title": "📊 Detailed Reporting",
+        "feature2_desc": "Detailed results with risk scores and confidence intervals",
+        "feature3_title": "🔒 Security Focused",
+        "feature3_desc": "Detects phishing, malware, and other threats",
+        "feature4_title": "🌐 Browser Extension",
+        "feature4_desc": "Automatic protection with the Chrome extension"
+      }
+    },
+    "analyze": {
+      "title": "URL Security Analysis",
+      "inputPlaceholder": "Enter the URL to analyze (e.g., https://example.com)",
+      "button": "Analyze",
+      "buttonLoading": "Analyzing...",
+      "loadingText": "Analyzing URL...",
+      "errorPrefix": "An error occurred during analysis:",
+      "errorInvalidURL": "Please enter a valid URL.",
+      "errorURLFormat": "URL must start with http:// or https://."
+    },
+    "result": {
+      "status": "Status",
+      "safe": "Safe",
+      "malicious": "Malicious",
+      "riskLevel": "Risk Level",
+      "probabilities": "Security Scores",
+      "safeProb": "Benign Probability",
+      "maliciousProb": "Malicious Probability",
+      "threatCategory": "Threat Category",
+      "type": "Type",
+      "description": "Description",
+      "analyzedURL": "Analyzed URL",
+      "safetyWarningTitle": "Security Alert",
+      "safetyWarningText": "It is recommended not to access this URL! Do not share personal information or download any files."
+    },
+    "footer": {
+      "copyright": "© {{year}} URLDet. All rights reserved.",
+      "developer": "Developer:"
+    }
+  }

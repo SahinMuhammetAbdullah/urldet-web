@@ -1,0 +1,64 @@
+{
+    "appName": "URLDet",
+    "header": {
+        "navHome": "Ana Sayfa",
+        "navAnalyze": "URL Analizi"
+    },
+    "home": {
+        "hero": {
+            "title": "URLDet",
+            "subtitle": "Gelişmiş makine öğrenmesi ile URL güvenlik analizi",
+            "button": "Hemen Analiz Et"
+        },
+        "howItWorks": {
+            "title": "Sistem Nasıl Çalışır?",
+            "description": "URLDet, son teknoloji makine öğrenmesi algoritmalarını kullanarak URL'lerin güvenliğini analiz eder.",
+            "feature1_title": "Random Forest",
+            "feature1_desc": "Binary sınıflandırma için Random Forest algoritması kullanarak URL'lerin güvenli veya şüpheli olduğunu belirler.",
+            "feature2_title": "Deep Q-Network",
+            "feature2_desc": "Çok sınıflı sınıflandırma için DQN modeli ile detaylı tehdit kategorilerini tespit eder.",
+            "feature3_title": "Gerçek Zamanlı Analiz",
+            "feature3_desc": "URL'ler anında analiz edilir ve sonuçlar birkaç saniye içinde döndürülür."
+        },
+        "featuresSection": {
+            "title": "Özellikler",
+            "feature1_title": "🔍 Kapsamlı Analiz",
+            "feature1_desc": "URL yapısı, domain özellikleri ve içerik analizi",
+            "feature2_title": "📊 Detaylı Raporlama",
+            "feature2_desc": "Risk skorları ve güven aralıkları ile detaylı sonuçlar",
+            "feature3_title": "🔒 Güvenlik Odaklı",
+            "feature3_desc": "Phishing, malware ve diğer tehditleri tespit eder",
+            "feature4_title": "🌐 Browser Eklentisi",
+            "feature4_desc": "Chrome eklentisi ile otomatik koruma"
+        }
+    },
+    "analyze": {
+        "title": "URL Güvenlik Analizi",
+        "inputPlaceholder": "Analiz etmek istediğiniz URL'yi girin (örn: https://example.com)",
+        "button": "Analiz Et",
+        "buttonLoading": "Analiz ediliyor...",
+        "loadingText": "URL analiz ediliyor...",
+        "errorPrefix": "Analiz sırasında bir hata oluştu:",
+        "errorInvalidURL": "Lütfen geçerli bir URL girin.",
+        "errorURLFormat": "URL http:// veya https:// ile başlamalıdır."
+    },
+    "result": {
+        "status": "Durum",
+        "safe": "Güvenli",
+        "malicious": "Tehlikeli",
+        "riskLevel": "Risk Seviyesi",
+        "probabilities": "Güvenlik Skorları",
+        "safeProb": "Güvenli Olasılığı",
+        "maliciousProb": "Tehlikeli Olasılığı",
+        "threatCategory": "Tehdit Kategorisi",
+        "type": "Tür",
+        "description": "Açıklama",
+        "analyzedURL": "Analiz Edilen URL",
+        "safetyWarningTitle": "Güvenlik Uyarısı",
+        "safetyWarningText": "Bu URL'ye erişmemeniz önerilir! Kişisel bilgilerinizi paylaşmayın ve indirme işlemi yapmayın."
+    },
+    "footer": {
+        "copyright": "© {{year}} URLDet. Tüm hakları saklıdır.",
+        "developer": "Geliştirici:"
+    }
+}
