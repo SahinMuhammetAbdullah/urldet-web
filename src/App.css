@@ -527,37 +527,36 @@ footer a:hover {
 
 /* === RESPONSIVE MEDYA SORGULARI === */
 @media (max-width: 768px) {
-
-  /* Genel Düzenlemeler */
-  .hero h1 {
-    font-size: 2.5rem;
+  /* --- Genel Düzenlemeler --- */
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.1rem; }
+  
+  .section {
+    padding: 2rem 1rem; /* Bölümlerin iç boşluğunu azalt */
   }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
   .section h2 {
     font-size: 2rem;
   }
 
-  .features,
-  .team-grid {
-    grid-template-columns: 1fr;
+  /* --- Izgara Yapıları için Tek Sütun Düzeni --- */
+  .features, .team-grid, .simple-features-grid, .result-details {
+    grid-template-columns: 1fr; /* TÜM GRID'LERİ TEK SÜTUNA DÜŞÜR */
   }
 
+  /* --- Analiz Sayfası Düzenlemeleri --- */
+  .search-container {
+    padding: 1.5rem; /* Analiz kutusunun iç boşluğunu azalt */
+  }
   .search-box {
     flex-direction: column;
   }
-
-  /* Navbar Düzenlemeleri */
-  .desktop-nav {
-    display: none;
+  .result {
+    padding: 1.5rem; /* Sonuç kutusunun iç boşluğunu azalt */
   }
 
-  .mobile-menu-toggle {
-    display: block;
-  }
+  /* --- Navbar Düzenlemeleri --- */
+  .desktop-nav { display: none; }
+  .mobile-menu-toggle { display: block; }
 }
 
 /* === ÖZELLİKLER BÖLÜMÜ (BASİT GRID) === */
