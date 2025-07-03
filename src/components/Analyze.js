@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import LoadingSpinner from './LoadingSpinner';
 import AnalysisResult from './AnalysisResult';
 
+// Font Awesome ikonunu import et
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChrome } from '@fortawesome/free-brands-svg-icons';
+
 const Analyze = () => {
   const { t } = useTranslation();
   const [url, setUrl] = useState('');
@@ -10,7 +14,12 @@ const Analyze = () => {
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
 
+  // Eklentinin Chrome Web Mağazası'ndaki linki
+  // 'YOUR_EXTENSION_ID' kısmını kendi ID'nizle değiştirmeyi unutmayın!
+  const extensionStoreUrl = "https://chrome.google.com/webstore/detail/phjancankjcbmdjcdlipmhlnjhljakjf";
+
   const handleAnalyze = async () => {
+    // Validasyon
     if (!url.trim()) {
       setError(t('analyze.errorInvalidURL'));
       return;
@@ -20,6 +29,7 @@ const Analyze = () => {
       return;
     }
 
+    // UI'ı sıfırla ve yükleme durumunu başlat
     setIsLoading(true);
     setError(null);
     setResult(null);
@@ -47,12 +57,19 @@ const Analyze = () => {
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') handleAnalyze();
+    if (e.key === 'Enter') {
+      handleAnalyze();
+    }
   };
 
   return (
-    <main id="analyze-content" className="analyze-section" style={{ display: 'block' }}>
+    // <main> etiketini koruyoruz, çünkü anlamsal olarak doğru
+    <main id="analyze-content" className="analyze-section">
       <div className="container">
+
+
+
+        {/* Analiz Formu Bölümü */}
         <section className="section">
           <h2>{t('analyze.title')}</h2>
           <div className="search-container">
@@ -80,6 +97,18 @@ const Analyze = () => {
             {result && <AnalysisResult data={result} />}
           </div>
         </section>
+        {/* Banner'ı kendi başına bir kutu olarak buraya yerleştiriyoruz */}
+        <div className="extension-banner">
+          <div className="banner-text">
+            <h3>{t('analyze.extensionBannerTitle')}</h3>
+            <p>{t('analyze.extensionBannerText')}</p>
+          </div>
+          <a href={extensionStoreUrl} target="_blank" rel="noopener noreferrer" className="banner-button">
+            <FontAwesomeIcon icon={faChrome} className="banner-icon" />
+            <span>{t('analyze.extensionBannerButton')}</span>
+          </a>
+        </div>
+        {/* --- BANNER SONU --- */}
       </div>
     </main>
   );

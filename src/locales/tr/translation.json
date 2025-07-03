@@ -40,7 +40,10 @@
         "loadingText": "URL analiz ediliyor...",
         "errorPrefix": "Analiz sırasında bir hata oluştu:",
         "errorInvalidURL": "Lütfen geçerli bir URL girin.",
-        "errorURLFormat": "URL http:// veya https:// ile başlamalıdır."
+        "errorURLFormat": "URL http:// veya https:// ile başlamalıdır.",
+        "extensionBannerTitle": "Tarayıcınızda Anında Koruma!",
+        "extensionBannerText": "URLDet eklentisini şimdi yükleyin ve gezinirken güvende kalın.",
+        "extensionBannerButton": "Chrome'a Ekle"
     },
     "result": {
         "status": "Durum",
@@ -69,10 +72,10 @@
         "teamTitle": "Geliştirici Ekip",
         "advisorsTitle": "Proje Danışmanları",
         "roles": {
-        "leadDeveloper": "Lider Geliştirici",
-        "developer": "Geliştirici",
-        "uiDesigner": "UI/UX Tasarımcısı",
-        "advisor": "Proje Danışmanı"
+            "leadDeveloper": "Lider Geliştirici",
+            "developer": "Geliştirici",
+            "uiDesigner": "UI/UX Tasarımcısı",
+            "advisor": "Proje Danışmanı"
         }
     },
     "footer": {
