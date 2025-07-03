@@ -66,7 +66,7 @@ const Analyze = () => {
   return (
     <>
 
-      <SEO titleKey="analyze.seo.title" descriptionKey="analysis.seo.description" />
+      <SEO titleKey="analyze.seo.title" descriptionKey="analyze.seo.description" />
       <main id="analyze-content" className="analyze-section">
         <div className="container">
 
