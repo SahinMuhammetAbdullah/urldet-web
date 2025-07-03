@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { teamMembers, advisors } from '../data/teamData';
+import SEO from './SEO'; // <-- SEO bileşenini import et
 
 // Font Awesome bileşenlerini ve ikonları import et
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,22 +16,26 @@ const iconMap = {
 // Tek bir kişi kartı oluşturan yardımcı bileşen
 const PersonCard = ({ name, roleKey, socialLink, icon }) => {
   const { t } = useTranslation();
-  
+
   // Veriden gelen ikon adına göre doğru ikonu seç
   const selectedIcon = iconMap[icon] || faUserTie; // Eğer ikon bulunamazsa varsayılan olarak faUserTie kullan
 
   return (
-    <div className="team-card">
-      <div className="icon-container">
-        {/* FontAwesomeIcon bileşenini kullanıyoruz */}
-        <FontAwesomeIcon icon={selectedIcon} className="team-icon" />
+    <>
+      <SEO titleKey="about.seo.title" descriptionKey="about.seo.description" />
+      <div className="team-card">
+        <div className="icon-container">
+          {/* FontAwesomeIcon bileşenini kullanıyoruz */}
+          <FontAwesomeIcon icon={selectedIcon} className="team-icon" />
+        </div>
+        <h4>{name}</h4>
+        <p className="team-role">{t(roleKey)}</p>
+        <a href={socialLink} target="_blank" rel="noopener noreferrer" className="social-link">
+          Profil
+        </a>
       </div>
-      <h4>{name}</h4>
-      <p className="team-role">{t(roleKey)}</p>
-      <a href={socialLink} target="_blank" rel="noopener noreferrer" className="social-link">
-        Profil
-      </a>
-    </div>
+    </>
+
   );
 };
 

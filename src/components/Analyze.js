@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LoadingSpinner from './LoadingSpinner';
 import AnalysisResult from './AnalysisResult';
+import SEO from './SEO'; // <-- SEO bileşenini import et
 
 // Font Awesome ikonunu import et
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -63,54 +64,58 @@ const Analyze = () => {
   };
 
   return (
-    // <main> etiketini koruyoruz, çünkü anlamsal olarak doğru
-    <main id="analyze-content" className="analyze-section">
-      <div className="container">
+    <>
+
+      <SEO titleKey="analyze.seo.title" descriptionKey="analysis.seo.description" />
+      <main id="analyze-content" className="analyze-section">
+        <div className="container">
 
 
 
-        {/* Analiz Formu Bölümü */}
-        <section className="section">
-          <h2>{t('analyze.title')}</h2>
-          <div className="search-container">
-            <div className="search-box">
-              <input
-                type="url"
-                className="url-input"
-                value={url}
-                onChange={(e) => setUrl(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder={t('analyze.inputPlaceholder')}
-                disabled={isLoading}
-              />
-              <button
-                className="analyze-btn"
-                onClick={handleAnalyze}
-                disabled={isLoading}
-              >
-                {isLoading ? t('analyze.buttonLoading') : t('analyze.button')}
-              </button>
+          {/* Analiz Formu Bölümü */}
+          <section className="section">
+            <h2>{t('analyze.title')}</h2>
+            <div className="search-container">
+              <div className="search-box">
+                <input
+                  type="url"
+                  className="url-input"
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  placeholder={t('analyze.inputPlaceholder')}
+                  disabled={isLoading}
+                />
+                <button
+                  className="analyze-btn"
+                  onClick={handleAnalyze}
+                  disabled={isLoading}
+                >
+                  {isLoading ? t('analyze.buttonLoading') : t('analyze.button')}
+                </button>
+              </div>
+
+              {isLoading && <LoadingSpinner message={t('analyze.loadingText')} />}
+              {error && <div className="error" style={{ display: 'block' }}>{error}</div>}
+              {result && <AnalysisResult data={result} />}
             </div>
-
-            {isLoading && <LoadingSpinner message={t('analyze.loadingText')} />}
-            {error && <div className="error" style={{ display: 'block' }}>{error}</div>}
-            {result && <AnalysisResult data={result} />}
+          </section>
+          {/* Banner'ı kendi başına bir kutu olarak buraya yerleştiriyoruz */}
+          <div className="extension-banner">
+            <div className="banner-text">
+              <h3>{t('analyze.extensionBannerTitle')}</h3>
+              <p>{t('analyze.extensionBannerText')}</p>
+            </div>
+            <a href={extensionStoreUrl} target="_blank" rel="noopener noreferrer" className="banner-button">
+              <FontAwesomeIcon icon={faChrome} className="banner-icon" />
+              <span>{t('analyze.extensionBannerButton')}</span>
+            </a>
           </div>
-        </section>
-        {/* Banner'ı kendi başına bir kutu olarak buraya yerleştiriyoruz */}
-        <div className="extension-banner">
-          <div className="banner-text">
-            <h3>{t('analyze.extensionBannerTitle')}</h3>
-            <p>{t('analyze.extensionBannerText')}</p>
-          </div>
-          <a href={extensionStoreUrl} target="_blank" rel="noopener noreferrer" className="banner-button">
-            <FontAwesomeIcon icon={faChrome} className="banner-icon" />
-            <span>{t('analyze.extensionBannerButton')}</span>
-          </a>
+          {/* --- BANNER SONU --- */}
         </div>
-        {/* --- BANNER SONU --- */}
-      </div>
-    </main>
+      </main>
+    </>
+
   );
 };
 

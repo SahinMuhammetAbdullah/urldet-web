@@ -5,6 +5,10 @@
     "navAnalyze": "URL Analysis"
   },
   "home": {
+    "seo": {
+      "title": "Home",
+      "description": "Instantly analyze the security of URLs with advanced machine learning. Protect yourself against phishing, malware, and other threats."
+    },
     "hero": {
       "title": "URLDet",
       "subtitle": "Advanced URL security analysis with machine learning",
@@ -33,6 +37,10 @@
     }
   },
   "analyze": {
+    "seo": {
+      "title": "URL Analysis",
+      "description": "Check if a URL is safe. URLDet uses artificial intelligence to detect potential threats."
+    },
     "title": "URL Security Analysis",
     "inputPlaceholder": "Enter the URL to analyze (e.g., https://example.com)",
     "button": "Analyze",
@@ -67,6 +75,10 @@
     "safetyWarningText": "It is recommended not to access this URL! Do not share personal information or download any files."
   },
   "about": {
+    "seo": {
+      "title": "About The Team",
+      "description": "Learn about the development team and advisors behind the URLDet project."
+    },
     "navLink": "About Team",
     "pageTitle": "Project Team and Advisors",
     "teamTitle": "Development Team",

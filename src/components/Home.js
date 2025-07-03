@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from './SEO'; // <-- SEO bileşenini import et
 
 const Home = () => {
     const { t } = useTranslation();
@@ -11,6 +12,8 @@ const Home = () => {
     };
 
     return (
+        <>
+        <SEO titleKey="home.seo.title" descriptionKey="home.seo.description" />
         <main id="home-content">
             <section className="hero">
                 <div className="container">
@@ -77,6 +80,8 @@ const Home = () => {
                 </section>
             </div>
         </main>
+        </>
+
     );
 };
 

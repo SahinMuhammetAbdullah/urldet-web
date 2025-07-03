@@ -5,6 +5,10 @@
         "navAnalyze": "URL Analizi"
     },
     "home": {
+        "seo": {
+            "title": "Ana Sayfa",
+            "description": "Gelişmiş makine öğrenmesi ile URL'lerin güvenliğini anında analiz edin. Phishing, malware ve diğer tehditlere karşı korunun."
+        },
         "hero": {
             "title": "URLDet",
             "subtitle": "Gelişmiş makine öğrenmesi ile URL güvenlik analizi",
@@ -33,6 +37,10 @@
         }
     },
     "analyze": {
+        "seo": {
+            "title": "URL Analizi",
+            "description": "Bir URL'nin güvenli olup olmadığını kontrol edin. URLDet, potansiyel tehditleri tespit etmek için yapay zeka kullanır."
+        },
         "title": "URL Güvenlik Analizi",
         "inputPlaceholder": "Analiz etmek istediğiniz URL'yi girin (örn: https://example.com)",
         "button": "Analiz Et",
@@ -67,6 +75,10 @@
         "minimal": "Minimal"
     },
     "about": {
+        "seo": {
+            "title": "Proje Ekibi",
+            "description": "URLDet projesini geliştiren ekip ve proje danışmanları hakkında bilgi edinin."
+        },
         "navLink": "Proje Ekibi",
         "pageTitle": "Proje Ekibi ve Danışmanlar",
         "teamTitle": "Geliştirici Ekip",
