@@ -1,4 +1,3 @@
-import React from 'react';
 
 const LoadingSpinner = ({ message }) => (
   <div className="loading" style={{ display: 'block' }}>

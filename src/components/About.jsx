@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { teamMembers, advisors } from '../data/teamData';
 import SEO from './SEO'; // <-- SEO bileşenini import et
