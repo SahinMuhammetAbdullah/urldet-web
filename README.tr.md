@@ -78,5 +78,3 @@ Bu proje MIT Lisansı kapsamında lisanslanmıştır - ayrıntılar için [LICEN
 ## 📧 İletişim
 
 Muhammet Abdullah Şahin - [GitHub Profili](https://github.com/SahinMuhammetAbdullah)
-
-Proje Bağlantısı: [https://github.com/SahinMuhammetAbdullah/urldet-web](https://github.com/SahinMuhammetAbdullah/urldet-web)
