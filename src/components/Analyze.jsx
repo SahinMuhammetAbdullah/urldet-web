@@ -36,7 +36,7 @@ const Analyze = () => {
     setResult(null);
 
     try {
-      const response = await fetch('https://urldet.masahin.dev/analyze', {
+      const response = await fetch('https://api.urldet.masahin.dev/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: url.trim() }),
